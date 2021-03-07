@@ -1,0 +1,73 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+build/cmake_install.cmake
+build/CMakeCache.txt
+build/Makefile
+build/CMakeFiles/cmake.check_cache
+build/CMakeFiles/CMakeDirectoryInformation.cmake
+build/CMakeFiles/CMakeOutput.log
+build/CMakeFiles/Makefile.cmake
+build/CMakeFiles/Makefile2
+build/CMakeFiles/progress.marks
+build/CMakeFiles/TargetDirectories.txt
+build/CMakeFiles/3.20.0-rc1/CMakeCCompiler.cmake
+build/CMakeFiles/3.20.0-rc1/CMakeCXXCompiler.cmake
+build/CMakeFiles/3.20.0-rc1/CMakeDetermineCompilerABI_C.bin
+build/CMakeFiles/3.20.0-rc1/CMakeDetermineCompilerABI_CXX.bin
+build/CMakeFiles/3.20.0-rc1/CMakeRCCompiler.cmake
+build/CMakeFiles/3.20.0-rc1/CMakeSystem.cmake
+build/CMakeFiles/3.20.0-rc1/CompilerIdC/CMakeCCompilerId.c
+build/CMakeFiles/3.20.0-rc1/CompilerIdCXX/CMakeCXXCompilerId.cpp
+build/CMakeFiles/email_addresses.dir/build.make
+build/CMakeFiles/email_addresses.dir/cmake_clean.cmake
+build/CMakeFiles/email_addresses.dir/compiler_depend.make
+build/CMakeFiles/email_addresses.dir/compiler_depend.ts
+build/CMakeFiles/email_addresses.dir/depend.make
+build/CMakeFiles/email_addresses.dir/DependInfo.cmake
+build/CMakeFiles/email_addresses.dir/flags.make
+build/CMakeFiles/email_addresses.dir/link.txt
+build/CMakeFiles/email_addresses.dir/linklibs.rsp
+build/CMakeFiles/email_addresses.dir/objects1.rsp
+build/CMakeFiles/email_addresses.dir/progress.make
+build/CMakeFiles/ip_address.dir/build.make
+build/CMakeFiles/ip_address.dir/cmake_clean.cmake
+build/CMakeFiles/ip_address.dir/compiler_depend.make
+build/CMakeFiles/ip_address.dir/compiler_depend.ts
+build/CMakeFiles/ip_address.dir/depend.make
+build/CMakeFiles/ip_address.dir/DependInfo.cmake
+build/CMakeFiles/ip_address.dir/flags.make
+build/CMakeFiles/ip_address.dir/link.txt
+build/CMakeFiles/ip_address.dir/linklibs.rsp
+build/CMakeFiles/ip_address.dir/objects1.rsp
+build/CMakeFiles/ip_address.dir/progress.make
+build/CMakeFiles/ip_address.dir/compiler_depend.internal
