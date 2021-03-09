@@ -9,18 +9,18 @@ bool validator(std::string strIP){
            || (!isdigit(strIP[i]))){
             return false;
         }
+    }    
+    for(int i = 0; i < 3; i++){
+        if((strIP[i] > '2') && (strIP[i] > '5') && (strIP[i] > '5')){
+            return false;
+        }
     }
-    
     if((strIP[0] == '0') && (strIP[1] > '0')){
-        return false;
-    }
-    if((strIP[0] > '2' && strIP[1] > '5' 
-        && strIP[2] > '5')){
         return false;
     }
     return true;
 }
-std::string parthIp(std::string strIP, int part){
+std::string parsIp(std::string strIP, int part){
     for(int i = 0; i < part; i++){
         strIP = strIP.erase(0, strIP.find(".") + 1);
     }
@@ -41,7 +41,7 @@ bool partOne(std::string strIP){
 }
 bool partTwo(std::string strIP){
     std::string strPartTwo;
-    strPartTwo = parthIp(strIP, 1);
+    strPartTwo = parsIp(strIP, 1);
     if(strPartTwo.empty()){
         return false;
     }
@@ -53,7 +53,7 @@ bool partTwo(std::string strIP){
 }
 bool partTree(std::string strIP){
     std::string strPatrTree;
-    strPatrTree = parthIp(strIP, 2);
+    strPatrTree = parsIp(strIP, 2);
     if(strPatrTree.empty()){
         return false;
     }
@@ -65,7 +65,7 @@ bool partTree(std::string strIP){
 }
 bool partFour(std::string strIP){
     std::string strPatrFour;
-    strPatrFour = parthIp(strIP, 3);
+    strPatrFour = parsIp(strIP, 3);
     if(strPatrFour.empty()){
         return false;
     }
