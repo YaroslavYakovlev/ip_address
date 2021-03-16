@@ -15,15 +15,6 @@ bool validator(std::string strIP){
     if(((strIP[0] == '0') && (strIP[1] == '0'))){
         return false;
     }
-    for(int i = 0; i < strIP.length(); i++){
-        if((strIP[i] >= '2') && ((strIP[i+1] >= '5') 
-           && (strIP[i] != strIP[strIP.length() - 1])) 
-             && ((strIP[i+2] > '5') 
-               && (strIP[i] != strIP[strIP.length() - 1]))){
-            return false;
-            
-        }
-    }
     return true;
 }
 std::string parsIp(std::string strIP, int part){
@@ -38,6 +29,10 @@ bool genelalPart(std::string strIP, int countPoint){
     for(int i = 0; i < countPoint; i++){
         strPatr = parsIp(strIP, i);
         if(!validator(strPatr) || strPatr.length() > 3){
+            return false;
+        }
+        int part = std::stoi(strPatr);
+        if(part > 255){
             return false;
         }
     }
